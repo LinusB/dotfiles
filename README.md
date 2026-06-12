@@ -1,10 +1,10 @@
-# Personalized Dotfiles
+# My Personalized 💻 Dotfiles
 
-This repository hosts my personal development environment configuration for
-macOS. It is built around **Zsh**, **Neovim**, and **Ghostty**, using **Zinit**
-to manage plugins efficiently.
+This repository hosts my personal working & development environment
+configuration for macOS. It is built around **Zsh**, **Neovim**, and
+**Ghostty**, using **Zinit** to manage plugins efficiently.
 
-![bmo](./docs/images/bmo.png)
+![avatar](./docs/images/avatar.png)
 
 ## 🛠 Tooling & Stack
 
@@ -48,7 +48,7 @@ The last step is to run the stow script to get the config synced via simlinks to
 all the config locations.
 
 ```bash
-# run stow scirpt
+# run stow script
 chmod +x stow_script.sh
 ./stow_script.sh
 ```
