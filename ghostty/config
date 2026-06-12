@@ -1,16 +1,15 @@
 # --- Schriftart & Darstellung ---
 font-family = "Hack Nerd Font"
-font-size = 15
+font-size = 14
 theme = "Catppuccin Mocha"
 
 # --- Fenster & Verhalten ---
 window-save-state = always
 window-height = 40
 window-width = 140
-window-decoration = false
 
 # --- Transparenz & Blur (Frosted Glass) ---
-background-opacity = 0.75
+background-opacity = 0.85
 background-blur-radius = 20
 
 # --- Sonstiges ---

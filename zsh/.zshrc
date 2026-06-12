@@ -78,7 +78,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
-## ----- TV -----
+# ----- TV -----
 eval "$(tv init zsh)"
 bindkey '^T' tv_smart_autocomplete
 
