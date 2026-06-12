@@ -6,3 +6,8 @@ vim.keymap.set("i", "jj", "<Esc>")
 
 -- pasting better
 vim.keymap.set("x", "<leader>p", '"_dP')
+
+-- File Explorer (Snacks) aufrufen
+vim.keymap.set("n", "<leader>e", function()
+  Snacks.explorer()
+end, { desc = "Toggle Explorer" })
