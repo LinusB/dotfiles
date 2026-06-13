@@ -30,7 +30,7 @@ configuration before.
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/olefSch/dotfiles.git ~/dotfiles
+git clone https://github.com/LinusB/dotfiles.git ~/dotfiles
 
 # 2. go into it
 cd ~/dotfiles
