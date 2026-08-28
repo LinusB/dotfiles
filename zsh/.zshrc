@@ -1,5 +1,7 @@
 ## ----- Init Env Vars -----
+
 export XDG_CONFIG_HOME="$HOME/.config"
+export PATH="$PATH:/Users/linus/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-9.2.0-2026-06-09-92a1605b2/bin"
 
 if [ -f "$HOME/.env" ]; then
   set -a
@@ -8,7 +10,9 @@ if [ -f "$HOME/.env" ]; then
 fi
 
 ## ----- Homebrew -----
-export PATH="/opt/homebrew/bin:$PATH"
+if [ -f "/opt/homebrew/bin/brew" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 ## ----- Alias -----
 alias cat='bat'
