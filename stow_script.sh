@@ -79,6 +79,7 @@ stow_package() {
 
 echo "This script will use stow to create symlinks from the dotfiles directory."
 
+
 stow_package "zsh"
 stow_package "starship" ".config/starship"
 stow_package "ghostty" ".config/ghostty"
@@ -100,8 +101,11 @@ case "$clear_nvim" in
   echo "Skipping Neovim cache clear."
   ;;
 esac
-stow_package "nvim" ".config/nvim"
-
+echo "Setting up Neovim directly..."
+if [ -L "$HOME/.config/nvim" ] || [ -d "$HOME/.config/nvim" ]; then
+  rm -rf "$HOME/.config/nvim"
+fi
+ln -s "$STOW_DIR/nvim" "$HOME/.config/nvim"
 echo "Script finished."
 
 exit 0
