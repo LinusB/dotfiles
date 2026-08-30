@@ -9,7 +9,7 @@ window-height = 40
 window-width = 140
 
 # --- Transparenz & Blur (Frosted Glass) ---
-background-opacity = 0.85
+background-opacity = 0.95
 background-blur-radius = 20
 
 # --- Sonstiges ---

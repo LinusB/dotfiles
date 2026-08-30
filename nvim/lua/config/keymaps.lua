@@ -7,7 +7,11 @@ vim.keymap.set("i", "jj", "<Esc>")
 -- pasting better
 vim.keymap.set("x", "<leader>p", '"_dP')
 
--- File Explorer (Snacks) aufrufen
+-- call File Explorer (Snacks)
 vim.keymap.set("n", "<leader>e", function()
   Snacks.explorer()
 end, { desc = "Toggle Explorer" })
+
+-- changing Tabs easier
+vim.keymap.set("n", "<leader><Left>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Previous Tab" })
+vim.keymap.set("n", "<leader><Right>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next Tab" })

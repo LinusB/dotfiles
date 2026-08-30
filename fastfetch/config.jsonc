@@ -79,7 +79,7 @@
     },
     {
       "type": "custom",
-      "format": "{#cyan}󰈸 {#blue}󱥰 {#green}󰩃 {#red} {#cyan} {#blue}󰆥 {#green}󰤄 {#cyan} ",
+      "format": "{#blue}❶ {#green}⓪ {#red}❶ {#cyan}❶  {#blue}❶ {#green}⓪ {#cyan}❶ {#red}⓪  {#blue}❶ {#green}❶ {#red}⓪ {#cyan}⓪ ",
     },
   ],
 }
